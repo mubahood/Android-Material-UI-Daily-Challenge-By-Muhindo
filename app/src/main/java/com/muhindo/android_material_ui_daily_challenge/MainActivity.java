@@ -6,10 +6,10 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.muhindo.android_material_ui_daily_challenge.R;
 import com.muhindo.android_material_ui_daily_challenge.activity.buttons.ButtonMainActivity;
 import com.muhindo.android_material_ui_daily_challenge.activity.card.CardMainActivity;
 import com.muhindo.android_material_ui_daily_challenge.activity.forms.FormMainActivity;
+import com.muhindo.android_material_ui_daily_challenge.activity.lists.ListsMainMenuActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openForms(View view) {
         Intent i = new Intent(this, FormMainActivity.class);
+        this.startActivity(i);
+    }
+
+    public void openList(View view) {
+        Intent i = new Intent(this, ListsMainMenuActivity.class);
         this.startActivity(i);
     }
 }
